@@ -33,11 +33,8 @@ int main( int argc, char* argv[] )
         return -1;
      }
 
-    Mat imgObject = imread(string(argv[1]), IMREAD_GRAYSCALE );
-    //Mat img_object = imread(string(argv[2]),"/home/rapsodo/Downloads/Small_area_rotated.png", IMREAD_GRAYSCALE );
-
-    Mat imgScene = imread(string(argv[2]), IMREAD_GRAYSCALE );
-    //Mat imgScene = imread("/home/rapsodo/Downloads/StarMap.png", IMREAD_GRAYSCALE );
+    Mat imgObject = imread(string(argv[1]), IMREAD_GRAYSCALE);
+    Mat imgScene = imread(string(argv[2]), IMREAD_GRAYSCALE);
 
     //use SIFT for descriptor computation
     Ptr<SIFT> detector = SIFT::create();
